@@ -1,3 +1,6 @@
+
+import java.util.Vector;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -10,11 +13,13 @@
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+        Vector Shot = new Vector();
+        Vector myTrajectory = new Vector();
+        Vector myLevel = new Vector();
+        Bird cioara = new Bird(1,"cioara",13,2,"roz","batrana",100,Shot, myTrajectory, myLevel);
+        Bird pinguin = new Bird(2,"pinguin",15,6,"maro","imperial",112,Shot, myTrajectory, myLevel);
     }
     
 }
