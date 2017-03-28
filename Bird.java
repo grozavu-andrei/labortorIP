@@ -1,5 +1,3 @@
-
-
 public class Bird implements LevelObjects{
 
     private int id;
