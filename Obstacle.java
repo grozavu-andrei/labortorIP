@@ -1,7 +1,6 @@
 
-import java.util.Vector;
 
-public class Obstacle {
+public class Obstacle implements LevelObjects{
 
     private int id;
 

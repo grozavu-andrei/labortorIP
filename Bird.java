@@ -1,7 +1,6 @@
 
-import java.util.Vector;
 
-public class Bird {
+public class Bird implements LevelObjects{
 
     private int id;
 

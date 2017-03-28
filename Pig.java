@@ -1,85 +1,127 @@
 
-import java.util.Vector;
 
-public class Pig {
+public class Pig implements LevelObjects{
 
-    private Integer idEnemy;
-
-    private Integer positionX;
-
-    private Integer positionY;
-
-    private Integer distance;
-
-    private Integer angle;
-
-    private Integer hp;
-
-    public Integer getIdEnemy() {
+    /**
+     * @return the idEnemy
+     */
+    public int getIdEnemy() {
         return idEnemy;
     }
 
-    public void setIdEnemy(Integer idEnemy) {
+    /**
+     * @param idEnemy the idEnemy to set
+     */
+    public void setIdEnemy(int idEnemy) {
         this.idEnemy = idEnemy;
     }
 
-    public Integer getPositionX() {
+    /**
+     * @return the positionX
+     */
+    public int getPositionX() {
         return positionX;
     }
 
-    public void setPositionX(Integer positionX) {
+    /**
+     * @param positionX the positionX to set
+     */
+    public void setPositionX(int positionX) {
         this.positionX = positionX;
     }
 
-    public Integer getPositionY() {
+    /**
+     * @return the positionY
+     */
+    public int getPositionY() {
         return positionY;
     }
 
-    public void setPositionY(Integer positionY) {
+    /**
+     * @param positionY the positionY to set
+     */
+    public void setPositionY(int positionY) {
         this.positionY = positionY;
     }
 
-    public Integer getDistance() {
+    /**
+     * @return the distance
+     */
+    public int getDistance() {
         return distance;
     }
 
-    public void setDistance(Integer distance) {
+    /**
+     * @param distance the distance to set
+     */
+    public void setDistance(int distance) {
         this.distance = distance;
     }
 
-    public Integer getAngle() {
+    /**
+     * @return the angle
+     */
+    public int getAngle() {
         return angle;
     }
 
-    public void setAngle(Integer angle) {
+    /**
+     * @param angle the angle to set
+     */
+    public void setAngle(int angle) {
         this.angle = angle;
     }
 
-    public Integer getHp() {
+    /**
+     * @return the hp
+     */
+    public int getHp() {
         return hp;
     }
 
-    public void setHp(Integer hp) {
+    /**
+     * @param hp the hp to set
+     */
+    public void setHp(int hp) {
         this.hp = hp;
     }
 
-    public Integer getPosition(int positionX, int positionY) {
-        return null;
+   
+
+    private int idEnemy;
+
+    private int positionX;
+
+    private int positionY;
+
+    private int distance;
+
+    private int angle;
+
+    private int hp;
+
+
+    public int getPositionX(int positionX) {
+        return positionX;
+    }
+    
+    public int getPositionY(int positionY){
+        return positionY;
     }
 
-    public Integer getDistance(int distance) {
-        return null;
+    public int getDistance(int distance) {
+        return distance;
     }
 
-    public Integer getAngle(int angle) {
-        return null;
+    public int getAngle(int angle) {
+        return angle;
     }
 
-    public Integer getHp(int hp) {
-        return null;
+    public int getHp(int hp) {
+        return hp;
     }
 
-    public Pig(Integer idEnemy, Integer positionX, Integer positionY, Integer distance, Integer angle, Integer hp) {
+    public Pig(int idEnemy, int positionX, int positionY, int distance, int angle, int hp) {
         this.idEnemy = idEnemy;
         this.positionX = positionX;
         this.positionY = positionY;
@@ -87,10 +129,11 @@ public class Pig {
         this.angle = angle;
         this.hp = hp;
     }
-
+    
     @Override
-    public String toString() {
-        return "" + this.getIdEnemy() + " " + this.getPositionX() + " " + this.getPositionY() + " " + this.getDistance() + " " + this.getAngle() + " " + this.getHp();
+    public String toString(){
+       
+        return ""+this.getIdEnemy()+" "+this.getPositionX()+" "+this.getPositionY()+" "+this.getDistance()+" "+this.getAngle()+" "+this.getHp();
     }
-
+     
 }
